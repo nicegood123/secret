@@ -17,7 +17,9 @@
 			?>
 				<div class="col-lg-3">
 				<div>
-					<img src="../<?php if (empty($row['photo'])){echo "upload/noimage.jpg";}else{echo $row['photo'];} ?>" style="width: 230px; height:230px; padding:auto; margin:auto;" class="thumbnail">
+					<a href="product_description.php?product_id=<?php echo $row['productid']; ?>">
+						<img src="../<?php if (empty($row['photo'])){echo "upload/noimage.jpg";}else{echo $row['photo'];} ?>" style="width: 230px; height:230px; padding:auto; margin:auto;" class="thumbnail">
+					</a>
 					<div style="height: 10px;"></div>
 					<div style="height:40px; width:230px; margin-left:17px;"><?php echo $row['product_name']; ?></div>
 					<div style="height: 10px;"></div>
@@ -43,7 +45,7 @@
 
 <div class="foot">
 <footer>
-<p> THIS PROJECT IS BROUGHT TO YOU BY <a href="https://code-projects.org/">CODE-PROJECTS</a> || www.code-projects.org ||</p>
+<p>Footer <a href="">Sprilikitiwi</a></p>
 </footer>
 </div>
 <style> .foot{text-align: center; border: 2px solid black;}</style>

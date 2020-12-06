@@ -1,7 +1,7 @@
 <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-                <a class="navbar-brand" href="https://www.code-projects.org">Code-Projects || POS and Inventory System ||</a>
+                <a class="navbar-brand" href="index.php">XYT Sales & Inventory System</a>
             </div>
 
 			<ul class=" nav navbar-nav">
