@@ -46,7 +46,12 @@
                             <span class="input-group-addon" style="width:120px;">Product Name:</span>
                             <input type="text" style="width:400px; text-transform:capitalize;" value="<?php echo ucwords($b['product_name']); ?>" class="form-control" name="name">
                         </div>
-						<div style="height:10px;"></div>
+                        <div style="height:10px;"></div>
+                        <div class="form-group input-group">
+                            <span style="width:120px;" class="input-group-addon">Description</span>
+                            <textarea name="description" class="form-control" cols="51" rows="1"><?php echo $b['product_description']; ?></textarea>
+                        </div>
+                        <div style="height:10px;"></div>
 						<div class="form-group input-group">
                             <span class="input-group-addon" style="width:120px;">Category:</span>
                             <select style="width:400px;" class="form-control" name="category">

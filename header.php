@@ -26,6 +26,15 @@
 		margin: auto;
 		padding: auto;
 	}
+
+	#signup_form {
+		width:350px;
+		height:500px;
+		position:relative;
+		top:50px;
+		margin: auto;
+		padding: auto;
+	}
 	</style>
 </head>
 	

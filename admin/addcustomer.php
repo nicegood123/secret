@@ -14,7 +14,7 @@
 	
 	?>
 		<script>
-			window.alert('Customer added successfully!');
+			window.alert('Account has been successfully created.');
 			window.history.back();
 		</script>
 	<?php

@@ -15,6 +15,10 @@
                             <span style="width:120px;" class="input-group-addon">Name:</span>
                             <input type="text" style="width:400px; text-transform:capitalize;" class="form-control" name="name" required>
                         </div>
+                        <div class="form-group input-group">
+                            <span style="width:120px;" class="input-group-addon">Description</span>
+                            <textarea name="description" class="form-control" cols="51" rows="1"></textarea>
+                        </div>
 						<div class="form-group input-group">
                             <span style="width:120px;" class="input-group-addon">Category:</span>
                             <select style="width:400px;" class="form-control" name="category">

@@ -7,6 +7,7 @@
 	$prow=mysqli_fetch_array($p);
 	
 	$name=$_POST['name'];
+	$description=$_POST['description'];
 	$category=$_POST['category'];
 	$supplier=$_POST['supplier'];
 	$price=$_POST['price'];
@@ -33,7 +34,7 @@
 		}
 	}
 	
-	mysqli_query($conn,"update product set product_name='$name', supplierid='$supplier', categoryid='$category', product_price='$price', photo='$location', product_qty='$qty' where productid='$id'");
+	mysqli_query($conn,"update product set product_name='$name', product_description='$description', supplierid='$supplier', categoryid='$category', product_price='$price', photo='$location', product_qty='$qty' where productid='$id'");
 	
 	if($qty!=$prow['product_qty']){
 		mysqli_query($conn,"insert into inventory (userid,action,productid,quantity,inventory_date) values ('".$_SESSION['id']."','Update Quantity', '$id', '$qty', NOW())");

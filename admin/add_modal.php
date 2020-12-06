@@ -12,11 +12,16 @@
 						<div class="container-fluid">
 						<div style="height:15px;"></div>
 						<div class="form-group input-group">
-                            <span style="width:120px;" class="input-group-addon">Name:</span>
+                            <span style="width:120px;" class="input-group-addon">Name</span>
                             <input type="text" style="width:400px; text-transform:capitalize;" class="form-control" name="name" required>
                         </div>
+                        <div class="form-group input-group">
+                            <span style="width:120px;" class="input-group-addon">Description</span>
+                            <!-- <input type="text" style="width:400px; text-transform:capitalize;" class="form-control" name="description" required> -->
+                            <textarea name="description" class="form-control" cols="100" rows="1" required></textarea>
+                        </div>
 						<div class="form-group input-group">
-                            <span style="width:120px;" class="input-group-addon">Category:</span>
+                            <span style="width:120px;" class="input-group-addon">Category</span>
                             <select style="width:400px;" class="form-control" name="category">
 								<?php
 									$cat=mysqli_query($conn,"select * from category");
@@ -29,7 +34,7 @@
 							</select>
                         </div>
 						<div class="form-group input-group">
-                            <span style="width:120px;" class="input-group-addon">Supplier:</span>
+                            <span style="width:120px;" class="input-group-addon">Supplier</span>
                             <select style="width:400px;" class="form-control" name="supplier">
 								<?php
 									$sup=mysqli_query($conn,"select * from supplier");
@@ -42,15 +47,15 @@
 							</select>
                         </div>
                         <div class="form-group input-group">
-                            <span style="width:120px;" class="input-group-addon">Price:</span>
+                            <span style="width:120px;" class="input-group-addon">Price</span>
                             <input type="text" style="width:400px;" class="form-control" name="price" required>
                         </div>
 						<div class="form-group input-group">
-                            <span style="width:120px;" class="input-group-addon">Quantity:</span>
+                            <span style="width:120px;" class="input-group-addon">Quantity</span>
                             <input type="text" style="width:400px;" class="form-control" name="qty">
                         </div>
 						<div class="form-group input-group">
-                            <span style="width:120px;" class="input-group-addon">Photo:</span>
+                            <span style="width:120px;" class="input-group-addon">Photo</span>
                             <input type="file" style="width:400px;" class="form-control" name="image">
                         </div>            
 						</div>
